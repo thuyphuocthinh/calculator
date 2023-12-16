@@ -1,0 +1,144 @@
+/* reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* app */
+
+#app {
+    width: 100vw;
+    /* height: 100vh; */
+    min-height: 100vh;
+    background-color: #343434;
+    display: flex;
+    align-items: center;
+}
+
+.calculator {
+    max-width: 350px;
+    height: 640px;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    border: 2px solid #fff;
+}
+
+.calculator-top {
+    width: 90%;
+    height: 30%;
+    background-color: #000;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.calculator-display {
+    color: #fff;
+    width: 100%;
+    font-size: 7rem;
+    line-height: 100px;
+    padding-right: 10px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.calculator-bottom {
+    height: 70%;
+    flex-direction: column;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.calculator-keyboard {
+    padding-bottom: 30px;
+}
+
+.calculator-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calculator-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calculator-btn {
+    width: 70px;
+    /* flex: 1 0 auto; */
+    height: 70px;
+    border-radius: 50%;
+    font-size: 2.2rem;
+    font-weight: 500;
+    border-color: transparent;
+}
+
+.calculator-btn:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.calculator-zero {
+    width: 48%;
+    border-radius: 50px;
+}
+
+.calculator-special-btn {
+    background-color: #e6e6e6;
+}
+
+.calculator-number-btn {
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+.calculator-operator-btn {
+    background-color: rgb(234, 152, 1);
+    color: #fff;
+    font-size: 2rem;
+}
